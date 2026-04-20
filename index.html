@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cedar Medical Center – Your Health Is Our Calling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <style id="dynamic-color-styles">
+        @layer base {
+            :root {
+                --palette-primary: #1A3C34;
+                --palette-secondary: #F4845F;
+                --palette-accent: #52B788;
+                --palette-steel: #6B7C74;
+                --background-default: #FAF7F2;
+                --background-paper: #FFFFFF;
+                --text-secondary: #6B7C74;
+                --text-tertiary: #FFFFFF;
+                --borders-main: #DDE8E2;
+            }
+
+            :dir(ltr) {
+                font-family: "DM Sans", system-ui, sans-serif;
+            }
+        }
+
+        .bg-cp_palette_primary {
+            background-color: var(--palette-primary) !important;
+        }
+
+        .bg-cp_palette_secondary {
+            background-color: var(--palette-secondary) !important;
+        }
+
+        .bg-cp_palette_accent {
+            background-color: var(--palette-accent) !important;
+        }
+
+        .bg-cp_palette_steel {
+            background-color: var(--palette-steel) !important;
+        }
+
+        .bg-cp_background_default {
+            background-color: var(--background-default) !important;
+        }
+
+        .bg-cp_background_paper {
+            background-color: var(--background-paper) !important;
+        }
+
+        .text-cp_palette_primary {
+            color: var(--palette-primary) !important;
+        }
+
+        .text-cp_palette_secondary {
+            color: var(--palette-secondary) !important;
+        }
+
+        .text-cp_palette_accent {
+            color: var(--palette-accent) !important;
+        }
+
+        .text-cp_palette_steel {
+            color: var(--palette-steel) !important;
+        }
+
+        .text-cp_text_secondary {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-cp_text_tertiary {
+            color: var(--text-tertiary) !important;
+        }
+
+        .border-cp_borders_main {
+            border-color: var(--borders-main) !important;
+        }
+
+        .border-cp_palette_primary {
+            border-color: var(--palette-primary) !important;
+        }
+
+        .border-cp_palette_secondary {
+            border-color: var(--palette-secondary) !important;
+        }
+
+        .border-cp_palette_accent {
+            border-color: var(--palette-accent) !important;
+        }
+
+        .hover\:bg-cp_palette_primary:hover {
+            background-color: var(--palette-primary) !important;
+        }
+
+        .hover\:bg-cp_palette_secondary:hover {
+            background-color: var(--palette-secondary) !important;
+        }
+
+        .hover\:bg-cp_palette_accent:hover {
+            background-color: var(--palette-accent) !important;
+        }
+
+        .hover\:bg-cp_background_default:hover {
+            background-color: var(--background-default) !important;
+        }
+
+        .hover\:bg-cp_background_paper:hover {
+            background-color: var(--background-paper) !important;
+        }
+
+        .hover\:text-cp_palette_primary:hover {
+            color: var(--palette-primary) !important;
+        }
+
+        .hover\:text-cp_palette_secondary:hover {
+            color: var(--palette-secondary) !important;
+        }
+
+        .hover\:text-cp_palette_accent:hover {
+            color: var(--palette-accent) !important;
+        }
+
+        .hover\:text-cp_text_tertiary:hover {
+            color: var(--text-tertiary) !important;
+        }
+
+        .hover\:border-cp_palette_primary:hover {
+            border-color: var(--palette-primary) !important;
+        }
+
+        .hover\:border-cp_palette_secondary:hover {
+            border-color: var(--palette-secondary) !important;
+        }
+
+        .hover\:border-cp_palette_accent:hover {
+            border-color: var(--palette-accent) !important;
+        }
+
+        .focus\:border-cp_palette_accent:focus {
+            border-color: var(--palette-accent) !important;
+        }
+
+        .font-display {
+            font-family: 'Fraunces', Georgia, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-8 py-5 grid grid-cols-3 items-center">
+            <nav class="hidden md:flex items-center gap-8 text-sm">
+                <a href="index.html"
+                    class="nav-link font-medium text-cp_text_tertiary opacity-80 hover:opacity-100 hover:text-cp_palette_accent transition-all duration-300">Home</a>
+                <a href="services.html"
+                    class="nav-link text-cp_text_tertiary opacity-80 hover:opacity-100 hover:text-cp_palette_accent transition-all duration-300">Departments</a>
+            </nav>
+            <div class="flex justify-center">
+                <a href="index.html" class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 bg-cp_palette_accent rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <span id="nav-wordmark"
+                        class="font-display text-xl font-700 text-cp_text_tertiary tracking-tight">Cedar<span
+                            class="text-cp_palette_accent italic"> Medical</span></span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center justify-end gap-8 text-sm">
+                <a href="about.html"
+                    class="nav-link text-cp_text_tertiary opacity-80 hover:opacity-100 hover:text-cp_palette_accent transition-all duration-300">About</a>
+                <a href="contact.html"
+                    class="nav-cta text-sm font-medium bg-cp_palette_secondary text-cp_text_tertiary px-5 py-2.5 rounded-full hover:opacity-90 hover:scale-105 transition-all duration-300">Book
+                    Appointment</a>
+            </div>
+            <div class="md:hidden flex justify-end col-span-2">
+                <button id="menu-btn" class="flex flex-col gap-1.5 focus:outline-none" aria-label="Toggle menu">
+                    <span id="bar1" class="block w-6 h-0.5 bg-cp_text_tertiary transition-all duration-300"></span>
+                    <span id="bar2" class="block w-6 h-0.5 bg-cp_text_tertiary transition-all duration-300"></span>
+                    <span id="bar3" class="block w-6 h-0.5 bg-cp_text_tertiary transition-all duration-300"></span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu"
+            class="md:hidden hidden flex-col items-center gap-6 py-10 text-sm bg-cp_palette_primary text-cp_text_tertiary">
+            <a href="index.html" class="hover:text-cp_palette_accent transition-colors duration-300">Home</a>
+            <a href="services.html" class="hover:text-cp_palette_accent transition-colors duration-300">Departments</a>
+            <a href="about.html" class="hover:text-cp_palette_accent transition-colors duration-300">About</a>
+            <a href="contact.html"
+                class="bg-cp_palette_secondary px-6 py-2.5 rounded-full hover:opacity-90 transition-opacity duration-300">Book
+                Appointment</a>
+        </div>
+    </header>
+
+    <section class="hero-section relative overflow-hidden bg-cp_palette_primary">
+        <div aria-hidden="true"
+            class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full hero-blob-1 pointer-events-none"></div>
+        <div aria-hidden="true"
+            class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full hero-blob-2 pointer-events-none"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-8 pt-44 pb-32">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <div class="inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-sm rounded-full px-5 py-2 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-cp_palette_accent inline-block"></span>
+                    <span class="text-xs font-medium text-cp_palette_accent tracking-wide">Cedar Medical Center — Est.
+                        2004</span>
+                </div>
+                <h1
+                    class="font-display text-6xl md:text-7xl lg:text-8xl font-900 text-cp_text_tertiary leading-[1.0] mb-8">
+                    Your health is<br />our <em class="italic font-300 text-cp_palette_accent">calling</em>.
+                </h1>
+                <p class="text-cp_text_tertiary opacity-65 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+                    Cedar Medical Center has been the heartbeat of this community for over twenty years — delivering
+                    expert, compassionate medical care to every patient who walks through our doors, regardless of their
+                    circumstances.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="contact.html"
+                        class="group inline-flex items-center gap-3 bg-cp_palette_secondary text-cp_text_tertiary font-medium px-8 py-4 rounded-full hover:opacity-90 hover:scale-105 transition-all duration-300 text-sm">
+                        Book an Appointment
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                    <a href="services.html"
+                        class="text-sm font-medium text-cp_text_tertiary opacity-75 hover:opacity-100 border-b border-white/30 pb-0.5 hover:border-cp_palette_accent hover:text-cp_palette_accent transition-all duration-300">Explore
+                        Our Departments</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-3xl mx-auto">
+                <div
+                    class="stat-float-card bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 text-center">
+                    <p class="font-display text-4xl font-700 text-cp_text_tertiary mb-1">120<span
+                            class="text-cp_palette_accent">+</span></p>
+                    <p class="text-xs text-cp_text_tertiary opacity-60 uppercase tracking-widest">Hospital Beds</p>
+                </div>
+                <div
+                    class="stat-float-card bg-cp_palette_accent/20 backdrop-blur-sm border border-cp_palette_accent/30 rounded-2xl p-6 text-center">
+                    <p class="font-display text-4xl font-700 text-cp_text_tertiary mb-1">45<span
+                            class="text-cp_palette_secondary">+</span></p>
+                    <p class="text-xs text-cp_text_tertiary opacity-60 uppercase tracking-widest">Medical Specialists
+                    </p>
+                </div>
+                <div
+                    class="stat-float-card bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 text-center">
+                    <p class="font-display text-4xl font-700 text-cp_text_tertiary mb-1">30<span
+                            class="text-cp_palette_accent">k</span></p>
+                    <p class="text-xs text-cp_text_tertiary opacity-60 uppercase tracking-widest">Patients per Year</p>
+                </div>
+            </div>
+        </div>
+        <svg aria-hidden="true" class="relative w-full block" style="margin-bottom:-2px" viewBox="0 0 1440 80"
+            preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#FAF7F2" />
+        </svg>
+    </section>
+
+    <main>
+
+        <section class="py-24 bg-cp_background_default">
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="grid md:grid-cols-2 gap-16 items-center mb-20">
+                    <div class="reveal">
+                        <span
+                            class="inline-block text-xs font-medium text-cp_palette_accent bg-cp_palette_accent/10 rounded-full px-4 py-1.5 mb-6 tracking-wide">Who
+                            We Are</span>
+                        <h2
+                            class="font-display text-5xl md:text-6xl font-700 text-cp_palette_primary leading-tight mb-8">
+                            A hospital built for this <em class="italic font-400">community</em>.
+                        </h2>
+                        <p class="text-cp_text_secondary leading-relaxed mb-5">Cedar Medical Center opened its doors in
+                            2004 with a clear purpose: to give our neighbourhood access to the kind of expert, caring
+                            medical treatment that was previously only available in distant city centres.</p>
+                        <p class="text-cp_text_secondary leading-relaxed mb-10">Today our 120-bed facility houses
+                            specialists across eight clinical departments, a 24-hour emergency unit, and more than 200
+                            healthcare professionals who treat every patient like family.</p>
+                        <a href="about.html"
+                            class="group inline-flex items-center gap-2 text-sm font-medium text-cp_palette_primary border-b-2 border-cp_palette_accent pb-0.5 hover:text-cp_palette_secondary hover:border-cp_palette_secondary transition-all duration-300">
+                            Our hospital story
+                            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="reveal relative">
+                        <div class="relative overflow-hidden rounded-3xl h-[500px] shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop"
+                                alt="Cedar Medical Center"
+                                class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                            <div aria-hidden="true"
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none rounded-3xl">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -bottom-6 -left-6 bg-cp_background_paper rounded-2xl shadow-xl p-5 border border-cp_borders_main pointer-events-none">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-10 h-10 bg-cp_palette_accent/15 rounded-xl flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-cp_palette_accent" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-600 text-cp_palette_primary">JCI Accredited Hospital</p>
+                                    <p class="text-xs text-cp_text_secondary">Recertified 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -top-6 -right-6 bg-cp_palette_secondary rounded-2xl shadow-xl p-5 pointer-events-none">
+                            <p class="font-display text-2xl font-700 text-white">24 / 7</p>
+                            <p class="text-xs text-white/75 uppercase tracking-widest mt-0.5">Emergency Care</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+                    <div
+                        class="bg-cp_background_paper rounded-2xl p-7 border border-cp_borders_main reveal hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-12 h-12 bg-cp_palette_primary/10 rounded-xl flex items-center justify-center mb-5">
+                            <svg class="w-6 h-6 text-cp_palette_primary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-lg font-700 text-cp_palette_primary mb-2">Compassionate Care</h3>
+                        <p class="text-sm text-cp_text_secondary leading-relaxed">Every patient is treated with dignity
+                            and genuine attention — not just a case file or a number in a queue.</p>
+                    </div>
+                    <div
+                        class="bg-cp_background_paper rounded-2xl p-7 border border-cp_borders_main reveal hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-12 h-12 bg-cp_palette_secondary/10 rounded-xl flex items-center justify-center mb-5">
+                            <svg class="w-6 h-6 text-cp_palette_secondary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-lg font-700 text-cp_palette_primary mb-2">Advanced Medicine</h3>
+                        <p class="text-sm text-cp_text_secondary leading-relaxed">State-of-the-art diagnostic equipment
+                            and evidence-based protocols across all eight clinical departments.</p>
+                    </div>
+                    <div
+                        class="bg-cp_background_paper rounded-2xl p-7 border border-cp_borders_main reveal hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-12 h-12 bg-cp_palette_accent/10 rounded-xl flex items-center justify-center mb-5">
+                            <svg class="w-6 h-6 text-cp_palette_accent" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-lg font-700 text-cp_palette_primary mb-2">Board-Certified Doctors
+                        </h3>
+                        <p class="text-sm text-cp_text_secondary leading-relaxed">45+ specialists across eight
+                            departments — all holding internationally recognised credentials and qualifications.</p>
+                    </div>
+                    <div
+                        class="bg-cp_background_paper rounded-2xl p-7 border border-cp_borders_main reveal hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-12 h-12 bg-cp_palette_primary/10 rounded-xl flex items-center justify-center mb-5">
+                            <svg class="w-6 h-6 text-cp_palette_primary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-lg font-700 text-cp_palette_primary mb-2">Community-Rooted</h3>
+                        <p class="text-sm text-cp_text_secondary leading-relaxed">We exist for this neighbourhood.
+                            Bringing world-class healthcare to our community has always been our founding mission.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <svg aria-hidden="true" class="w-full block bg-cp_background_default" style="margin-bottom:-2px"
+            viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,35 C480,0 960,70 1440,35 L1440,70 L0,70 Z" fill="#FFFFFF" />
+        </svg>
+
+        <section class="py-24 bg-cp_background_paper">
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="text-center mb-16 reveal">
+                    <span
+                        class="inline-block text-xs font-medium text-cp_palette_accent bg-cp_palette_accent/10 rounded-full px-4 py-1.5 mb-5 tracking-wide">Clinical
+                        Departments</span>
+                    <h2 class="font-display text-5xl md:text-6xl font-700 text-cp_palette_primary mb-5">Our Specialties
+                    </h2>
+                    <p class="text-cp_text_secondary max-w-xl mx-auto leading-relaxed">Eight dedicated departments
+                        staffed by board-certified specialists — all under one connected, modern facility.</p>
+                </div>
+                <div class="space-y-5">
+                    <div
+                        class="grid md:grid-cols-[80px_1fr_auto] gap-6 items-center bg-cp_background_default rounded-2xl p-7 border border-cp_borders_main hover:border-cp_palette_accent hover:shadow-lg transition-all duration-300 reveal">
+                        <div class="font-display text-5xl font-900 text-cp_palette_secondary opacity-40 leading-none">01
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl font-700 text-cp_palette_primary mb-2">Emergency Medicine
+                            </h3>
+                            <p class="text-cp_text_secondary leading-relaxed text-sm">Our 24-hour emergency department
+                                is equipped for trauma, cardiac events, and life-threatening emergencies. Response times
+                                average under 4 minutes from arrival to physician contact.</p>
+                        </div>
+                        <a href="services.html"
+                            class="group flex-shrink-0 inline-flex items-center gap-2 text-sm font-medium text-cp_palette_primary hover:text-cp_palette_secondary transition-colors duration-300">
+                            Learn more <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div
+                        class="grid md:grid-cols-[80px_1fr_auto] gap-6 items-center bg-cp_background_default rounded-2xl p-7 border border-cp_borders_main hover:border-cp_palette_accent hover:shadow-lg transition-all duration-300 reveal">
+                        <div class="font-display text-5xl font-900 text-cp_palette_secondary opacity-40 leading-none">02
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl font-700 text-cp_palette_primary mb-2">Cardiology &amp;
+                                Heart Care</h3>
+                            <p class="text-cp_text_secondary leading-relaxed text-sm">From echocardiography and stress
+                                testing to interventional cardiology and cardiac rehabilitation — comprehensive heart
+                                care at every stage of your journey.</p>
+                        </div>
+                        <a href="services.html"
+                            class="group flex-shrink-0 inline-flex items-center gap-2 text-sm font-medium text-cp_palette_primary hover:text-cp_palette_secondary transition-colors duration-300">
+                            Learn more <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div
+                        class="grid md:grid-cols-[80px_1fr_auto] gap-6 items-center bg-cp_background_default rounded-2xl p-7 border border-cp_borders_main hover:border-cp_palette_accent hover:shadow-lg transition-all duration-300 reveal">
+                        <div class="font-display text-5xl font-900 text-cp_palette_secondary opacity-40 leading-none">03
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl font-700 text-cp_palette_primary mb-2">Paediatrics &amp;
+                                Child Health</h3>
+                            <p class="text-cp_text_secondary leading-relaxed text-sm">A dedicated paediatric unit
+                                designed for children — from newborns through adolescents — with specialists,
+                                child-friendly spaces, and family-centred care at its core.</p>
+                        </div>
+                        <a href="services.html"
+                            class="group flex-shrink-0 inline-flex items-center gap-2 text-sm font-medium text-cp_palette_primary hover:text-cp_palette_secondary transition-colors duration-300">
+                            Learn more <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center mt-10 reveal">
+                    <a href="services.html"
+                        class="group inline-flex items-center gap-2 text-sm font-medium text-cp_palette_primary border-b-2 border-cp_palette_accent pb-0.5 hover:text-cp_palette_secondary hover:border-cp_palette_secondary transition-all duration-300">
+                        View all 8 departments <svg
+                            class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <svg aria-hidden="true" class="w-full block bg-cp_background_paper" style="margin-bottom:-2px"
+            viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 C360,70 1080,0 1440,50 L1440,70 L0,70 Z" fill="#1A3C34" />
+        </svg>
+
+        <section class="py-24 bg-cp_palette_primary">
+            <div class="max-w-6xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center reveal">
+                    <p class="font-display text-5xl font-900 text-cp_text_tertiary mb-2">120<span
+                            class="text-cp_palette_secondary">+</span></p>
+                    <p class="text-xs font-medium text-cp_text_tertiary opacity-50 uppercase tracking-widest">Hospital
+                        Beds</p>
+                </div>
+                <div class="text-center reveal">
+                    <p class="font-display text-5xl font-900 text-cp_text_tertiary mb-2">45<span
+                            class="text-cp_palette_secondary">+</span></p>
+                    <p class="text-xs font-medium text-cp_text_tertiary opacity-50 uppercase tracking-widest">
+                        Specialists on Staff</p>
+                </div>
+                <div class="text-center reveal">
+                    <p class="font-display text-5xl font-900 text-cp_text_tertiary mb-2">30<span
+                            class="text-cp_palette_secondary">k</span></p>
+                    <p class="text-xs font-medium text-cp_text_tertiary opacity-50 uppercase tracking-widest">Patients
+                        per Year</p>
+                </div>
+                <div class="text-center reveal">
+                    <p class="font-display text-5xl font-900 text-cp_text_tertiary mb-2">20<span
+                            class="text-cp_palette_secondary">yr</span></p>
+                    <p class="text-xs font-medium text-cp_text_tertiary opacity-50 uppercase tracking-widest">Serving
+                        Our Community</p>
+                </div>
+            </div>
+        </section>
+
+        <svg aria-hidden="true" class="w-full block bg-cp_palette_primary" style="margin-bottom:-2px"
+            viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,50 C480,0 960,70 1440,20 L1440,70 L0,70 Z" fill="#FAF7F2" />
+        </svg>
+
+        <section class="py-24 bg-cp_background_default">
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="grid md:grid-cols-[1fr_2fr] gap-14 items-center reveal">
+                    <div class="relative">
+                        <div class="overflow-hidden rounded-3xl h-[500px] shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?q=80&w=700&auto=format&fit=crop"
+                                alt="Patient testimonial" class="w-full h-full object-cover object-top" />
+                        </div>
+                        <div
+                            class="absolute -bottom-5 -right-5 bg-cp_palette_accent rounded-2xl p-5 shadow-xl pointer-events-none">
+                            <p class="font-display text-2xl font-700 text-white">★ 4.9</p>
+                            <p class="text-[10px] text-white/75 uppercase tracking-widest mt-0.5">Patient Rating</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span
+                            class="inline-block text-xs font-medium text-cp_palette_accent bg-cp_palette_accent/10 rounded-full px-4 py-1.5 mb-7 tracking-wide">Patient
+                            Story</span>
+                        <div class="font-display text-7xl text-cp_palette_secondary opacity-30 leading-none mb-2">"
+                        </div>
+                        <blockquote
+                            class="font-display text-3xl md:text-4xl font-400 italic text-cp_palette_primary leading-[1.3] mb-8">
+                            The team at Cedar didn't just treat my condition — they treated me. Every nurse, every
+                            doctor made me feel safe, informed, and genuinely cared for throughout my recovery.
+                        </blockquote>
+                        <div class="flex items-center gap-4 border-t border-cp_borders_main pt-7">
+                            <div
+                                class="w-12 h-12 rounded-full bg-cp_palette_accent/20 flex items-center justify-center text-cp_palette_accent font-display font-700">
+                                MH</div>
+                            <div>
+                                <p class="font-display text-base font-700 text-cp_palette_primary">Mohammed Al-Harbi</p>
+                                <p class="text-sm text-cp_text_secondary">Patient · Cardiac Department, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <svg aria-hidden="true" class="w-full block bg-cp_background_default" style="margin-bottom:-2px"
+            viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,35 C360,0 1080,70 1440,35 L1440,70 L0,70 Z" fill="#FFFFFF" />
+        </svg>
+
+        <section class="py-28 bg-cp_background_paper text-center">
+            <div class="max-w-3xl mx-auto px-8 reveal">
+                <span
+                    class="inline-block text-xs font-medium text-cp_palette_accent bg-cp_palette_accent/10 rounded-full px-4 py-1.5 mb-7 tracking-wide">We're
+                    Here For You</span>
+                <h2 class="font-display text-5xl md:text-6xl font-700 text-cp_palette_primary leading-tight mb-7">
+                    Ready to take the next step in your <em class="italic font-400 text-cp_palette_secondary">health
+                        journey</em>?
+                </h2>
+                <p class="text-cp_text_secondary leading-relaxed mb-10 text-lg">Whether it's a routine check-up, a
+                    specialist referral, or an urgent concern — our team is ready and waiting. Booking an appointment
+                    takes less than two minutes.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html"
+                        class="group inline-flex items-center justify-center gap-3 bg-cp_palette_primary text-cp_text_tertiary font-medium px-10 py-4 rounded-full hover:bg-cp_palette_secondary hover:scale-105 transition-all duration-300">
+                        Book an Appointment
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                    <a href="about.html"
+                        class="inline-flex items-center justify-center text-sm font-medium text-cp_palette_primary border-2 border-cp_borders_main px-10 py-4 rounded-full hover:border-cp_palette_primary transition-all duration-300">Meet
+                        Our Doctors</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-cp_palette_primary py-16">
+        <div class="max-w-6xl mx-auto px-8">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-2.5 mb-5">
+                        <div class="w-8 h-8 bg-cp_palette_accent rounded-full flex items-center justify-center"><svg
+                                class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg></div>
+                        <span class="font-display text-xl font-700 text-white">Cedar<span
+                                class="text-cp_palette_accent italic"> Medical</span></span>
+                    </div>
+                    <p class="text-sm text-white/50 leading-relaxed max-w-xs mb-7">Your health is our calling.
+                        JCI-accredited, community-centred medical care since 2004.</p>
+                    <p class="text-xs text-cp_palette_accent font-medium mb-1">Emergency Line (24 / 7)</p>
+                    <p class="font-display text-2xl font-700 text-white">+1 (800) 233-2911</p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-600 uppercase tracking-[0.2em] text-cp_palette_accent mb-5">Departments</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Emergency
+                                Medicine</a></li>
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Cardiology</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Paediatrics</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Orthopaedics</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">All
+                                Departments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-600 uppercase tracking-[0.2em] text-cp_palette_accent mb-5">Visiting Hours
+                    </h4>
+                    <p class="text-xs text-white/40 mb-1">General Wards</p>
+                    <p class="text-sm text-white/70 mb-4">Daily · 10:00 AM – 8:00 PM</p>
+                    <p class="text-xs text-white/40 mb-1">ICU / Critical Care</p>
+                    <p class="text-sm text-white/70 mb-6">Family only · By appointment</p>
+                    <a href="contact.html"
+                        class="inline-block bg-cp_palette_secondary text-white text-sm font-medium px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity duration-300">Book
+                        Appointment</a>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-white/30">© 2026 Cedar Medical Center. All rights reserved.</p>
+                <div class="flex gap-6 text-xs text-white/30">
+                    <a href="#" class="hover:text-white/60 transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-white/60 transition-colors duration-300">Patient Rights</a>
+                    <a href="#" class="hover:text-white/60 transition-colors duration-300">Accreditations</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () { const s = document.createElement('style'); s.textContent = `body{background-color:var(--background-default);color:var(--text-secondary);font-family:"DM Sans",system-ui,sans-serif;overflow-x:hidden;}.hero-section{min-height:100vh;}.hero-blob-1{background:radial-gradient(circle,rgba(82,183,136,0.18),transparent 65%);}.hero-blob-2{background:radial-gradient(circle,rgba(244,132,95,0.12),transparent 65%);}.stat-float-card{animation:floatCard 4s ease-in-out infinite;}.stat-float-card:nth-child(2){animation-delay:1.3s;}.stat-float-card:nth-child(3){animation-delay:2.6s;}@keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.8s ease,transform 0.8s ease;}.reveal.visible{opacity:1;transform:translateY(0);}`; document.head.appendChild(s); })();
+        const navbar = document.getElementById('navbar'), navWordmark = document.getElementById('nav-wordmark'), navLinks = document.querySelectorAll('.nav-link'), bar1 = document.getElementById('bar1'), bar2 = document.getElementById('bar2'), bar3 = document.getElementById('bar3');
+        window.addEventListener('scroll', () => { const s = window.scrollY > 60; navbar.classList.toggle('bg-cp_background_paper', s); navbar.classList.toggle('shadow-md', s); if (navWordmark) { navWordmark.classList.toggle('text-cp_text_tertiary', !s); navWordmark.classList.toggle('text-cp_palette_primary', s); } navLinks.forEach(el => { el.classList.toggle('text-cp_text_tertiary', !s); el.classList.toggle('text-cp_palette_primary', s); });[bar1, bar2, bar3].forEach(b => { b.classList.toggle('bg-cp_text_tertiary', !s); b.classList.toggle('bg-cp_palette_primary', s); }); });
+        const menuBtn = document.getElementById('menu-btn'), mobileMenu = document.getElementById('mobile-menu'); let open = false;
+        menuBtn.addEventListener('click', () => { open = !open; mobileMenu.classList.toggle('hidden'); mobileMenu.classList.toggle('flex'); bar1.classList.toggle('translate-y-2'); bar1.classList.toggle('rotate-45'); bar2.classList.toggle('opacity-0'); bar3.classList.toggle('-translate-y-2'); bar3.classList.toggle('-rotate-45'); });
+        mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { open = false; mobileMenu.classList.add('hidden'); mobileMenu.classList.remove('flex'); bar1.classList.remove('translate-y-2', 'rotate-45'); bar2.classList.remove('opacity-0'); bar3.classList.remove('-translate-y-2', '-rotate-45'); }));
+        const obs = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('visible'); obs.unobserve(x.target); } }), { threshold: 0.08 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    </script>
+</body>
+
+</html>

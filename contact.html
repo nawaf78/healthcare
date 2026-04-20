@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact &amp; Appointments – Cedar Medical Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <style id="dynamic-color-styles">
+        @layer base {
+            :root {
+                --palette-primary: #1A3C34;
+                --palette-secondary: #F4845F;
+                --palette-accent: #52B788;
+                --palette-steel: #6B7C74;
+                --background-default: #FAF7F2;
+                --background-paper: #FFFFFF;
+                --text-secondary: #6B7C74;
+                --text-tertiary: #FFFFFF;
+                --borders-main: #DDE8E2;
+            }
+
+            :dir(ltr) {
+                font-family: "DM Sans", system-ui, sans-serif;
+            }
+        }
+
+        .bg-cp_palette_primary {
+            background-color: var(--palette-primary) !important;
+        }
+
+        .bg-cp_palette_secondary {
+            background-color: var(--palette-secondary) !important;
+        }
+
+        .bg-cp_palette_accent {
+            background-color: var(--palette-accent) !important;
+        }
+
+        .bg-cp_palette_steel {
+            background-color: var(--palette-steel) !important;
+        }
+
+        .bg-cp_background_default {
+            background-color: var(--background-default) !important;
+        }
+
+        .bg-cp_background_paper {
+            background-color: var(--background-paper) !important;
+        }
+
+        .text-cp_palette_primary {
+            color: var(--palette-primary) !important;
+        }
+
+        .text-cp_palette_secondary {
+            color: var(--palette-secondary) !important;
+        }
+
+        .text-cp_palette_accent {
+            color: var(--palette-accent) !important;
+        }
+
+        .text-cp_palette_steel {
+            color: var(--palette-steel) !important;
+        }
+
+        .text-cp_text_secondary {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-cp_text_tertiary {
+            color: var(--text-tertiary) !important;
+        }
+
+        .border-cp_borders_main {
+            border-color: var(--borders-main) !important;
+        }
+
+        .border-cp_palette_primary {
+            border-color: var(--palette-primary) !important;
+        }
+
+        .border-cp_palette_secondary {
+            border-color: var(--palette-secondary) !important;
+        }
+
+        .border-cp_palette_accent {
+            border-color: var(--palette-accent) !important;
+        }
+
+        .hover\:bg-cp_palette_primary:hover {
+            background-color: var(--palette-primary) !important;
+        }
+
+        .hover\:bg-cp_palette_secondary:hover {
+            background-color: var(--palette-secondary) !important;
+        }
+
+        .hover\:bg-cp_palette_accent:hover {
+            background-color: var(--palette-accent) !important;
+        }
+
+        .hover\:bg-cp_background_default:hover {
+            background-color: var(--background-default) !important;
+        }
+
+        .hover\:bg-cp_background_paper:hover {
+            background-color: var(--background-paper) !important;
+        }
+
+        .hover\:text-cp_palette_primary:hover {
+            color: var(--palette-primary) !important;
+        }
+
+        .hover\:text-cp_palette_secondary:hover {
+            color: var(--palette-secondary) !important;
+        }
+
+        .hover\:text-cp_palette_accent:hover {
+            color: var(--palette-accent) !important;
+        }
+
+        .hover\:text-cp_text_tertiary:hover {
+            color: var(--text-tertiary) !important;
+        }
+
+        .hover\:border-cp_palette_primary:hover {
+            border-color: var(--palette-primary) !important;
+        }
+
+        .hover\:border-cp_palette_secondary:hover {
+            border-color: var(--palette-secondary) !important;
+        }
+
+        .hover\:border-cp_palette_accent:hover {
+            border-color: var(--palette-accent) !important;
+        }
+
+        .focus\:border-cp_palette_accent:focus {
+            border-color: var(--palette-accent) !important;
+        }
+
+        .font-display {
+            font-family: 'Fraunces', Georgia, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-8 py-5 grid grid-cols-3 items-center">
+            <nav class="hidden md:flex items-center gap-8 text-sm">
+                <a href="index.html"
+                    class="nav-link text-cp_text_tertiary opacity-80 hover:opacity-100 hover:text-cp_palette_accent transition-all duration-300">Home</a>
+                <a href="services.html"
+                    class="nav-link text-cp_text_tertiary opacity-80 hover:opacity-100 hover:text-cp_palette_accent transition-all duration-300">Departments</a>
+            </nav>
+            <div class="flex justify-center">
+                <a href="index.html" class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 bg-cp_palette_accent rounded-full flex items-center justify-center"><svg
+                            class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg></div>
+                    <span id="nav-wordmark"
+                        class="font-display text-xl font-700 text-cp_text_tertiary tracking-tight">Cedar<span
+                            class="text-cp_palette_accent italic"> Medical</span></span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center justify-end gap-8 text-sm">
+                <a href="about.html"
+                    class="nav-link text-cp_text_tertiary opacity-80 hover:opacity-100 hover:text-cp_palette_accent transition-all duration-300">About</a>
+                <a href="contact.html"
+                    class="nav-link text-cp_palette_accent font-medium transition-all duration-300">Contact</a>
+            </div>
+            <div class="md:hidden flex justify-end col-span-2">
+                <button id="menu-btn" class="flex flex-col gap-1.5 focus:outline-none">
+                    <span id="bar1" class="block w-6 h-0.5 bg-cp_text_tertiary transition-all duration-300"></span>
+                    <span id="bar2" class="block w-6 h-0.5 bg-cp_text_tertiary transition-all duration-300"></span>
+                    <span id="bar3" class="block w-6 h-0.5 bg-cp_text_tertiary transition-all duration-300"></span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu"
+            class="md:hidden hidden flex-col items-center gap-6 py-10 text-sm bg-cp_palette_primary text-cp_text_tertiary">
+            <a href="index.html" class="hover:text-cp_palette_accent transition-colors duration-300">Home</a>
+            <a href="services.html" class="hover:text-cp_palette_accent transition-colors duration-300">Departments</a>
+            <a href="about.html" class="hover:text-cp_palette_accent transition-colors duration-300">About</a>
+            <a href="contact.html" class="text-cp_palette_accent font-medium">Contact</a>
+        </div>
+    </header>
+
+    <section class="page-hero relative overflow-hidden bg-cp_palette_primary">
+        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1600&auto=format&fit=crop"
+            alt="Contact Cedar Medical Center" class="absolute inset-0 w-full h-full object-cover opacity-15" />
+        <div aria-hidden="true"
+            class="absolute inset-0 bg-gradient-to-r from-[#1A3C34]/95 via-[#1A3C34]/80 to-transparent pointer-events-none">
+        </div>
+        <div class="relative z-10 max-w-6xl mx-auto px-8 pt-44 pb-32">
+            <div class="max-w-2xl">
+                <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-5 py-2 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-cp_palette_accent"></span>
+                    <span class="text-xs font-medium text-cp_palette_accent tracking-wide">Appointments &amp;
+                        Enquiries</span>
+                </span>
+                <h1 class="font-display text-6xl md:text-7xl font-900 text-cp_text_tertiary leading-[1.0] mb-7">
+                    We're here to <em class="italic font-300 text-cp_palette_accent">help you</em>.
+                </h1>
+                <p class="text-cp_text_tertiary opacity-65 text-lg leading-relaxed mb-8 max-w-xl">Book an appointment,
+                    ask a question, or just let us know how we can help. Our team responds to every message within one
+                    business day — emergencies, please call our 24/7 line directly.</p>
+                <div
+                    class="inline-flex items-center gap-3 bg-cp_palette_secondary/20 border border-cp_palette_secondary/40 rounded-2xl px-6 py-4">
+                    <svg class="w-5 h-5 text-cp_palette_secondary flex-shrink-0" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <div>
+                        <p class="text-xs text-white/60 uppercase tracking-widest">Emergency &amp; 24/7 Line</p>
+                        <p class="font-display text-xl font-700 text-white">+1 (800) 233-2911</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg aria-hidden="true" class="relative w-full block" style="margin-bottom:-2px" viewBox="0 0 1440 70"
+            preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 1080,0 1440,40 L1440,70 L0,70 Z" fill="#FAF7F2" />
+        </svg>
+    </section>
+
+    <main>
+
+        <section class="py-24 bg-cp_background_default">
+            <div class="max-w-6xl mx-auto px-8 grid md:grid-cols-[2fr_3fr] gap-14 items-start">
+
+                <div class="reveal">
+                    <span
+                        class="inline-block text-xs font-medium text-cp_palette_accent bg-cp_palette_accent/10 rounded-full px-4 py-1.5 mb-6 tracking-wide">Hospital
+                        Contact</span>
+                    <h2 class="font-display text-4xl font-700 text-cp_palette_primary leading-tight mb-7">
+                        The right team is just a <em class="italic font-400">call away</em>.
+                    </h2>
+                    <p class="text-cp_text_secondary leading-relaxed mb-10">Our reception and scheduling team are
+                        available Sunday through Thursday during regular hours. For urgent medical needs, our emergency
+                        line operates around the clock.</p>
+                    <div class="space-y-5 mb-10">
+                        <div
+                            class="flex items-start gap-4 bg-cp_background_paper rounded-2xl p-5 border border-cp_borders_main">
+                            <div
+                                class="w-10 h-10 bg-cp_palette_accent/15 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-cp_palette_accent" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-1">
+                                    Address</p>
+                                <p class="text-sm text-cp_text_secondary leading-relaxed">84 Greenway Boulevard, Cedar
+                                    District<br />Springfield, IL 62701, USA</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 bg-cp_background_paper rounded-2xl p-5 border border-cp_borders_main">
+                            <div
+                                class="w-10 h-10 bg-cp_palette_secondary/15 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-cp_palette_secondary" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-1">Phone
+                                </p>
+                                <p class="text-sm text-cp_text_secondary">+1 (217) 555-0190 (Appointments)</p>
+                                <p class="text-sm text-cp_text_secondary">+1 (800) 233-2911 (Emergency 24/7)</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 bg-cp_background_paper rounded-2xl p-5 border border-cp_borders_main">
+                            <div
+                                class="w-10 h-10 bg-cp_palette_primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-cp_palette_primary" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-1">Email
+                                </p>
+                                <p class="text-sm text-cp_text_secondary">appointments@cedarmedical.org</p>
+                                <p class="text-sm text-cp_text_secondary">info@cedarmedical.org</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 bg-cp_background_paper rounded-2xl p-5 border border-cp_borders_main">
+                            <div
+                                class="w-10 h-10 bg-cp_palette_accent/15 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-cp_palette_accent" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-1">Hours
+                                </p>
+                                <p class="text-sm text-cp_text_secondary">Reception: Sun – Thu, 7:00 AM – 7:00 PM</p>
+                                <p class="text-sm text-cp_text_secondary">Emergency: 24 hours, 7 days</p>
+                                <p class="text-sm text-cp_text_secondary">Visiting: Daily, 10:00 AM – 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <div
+                        class="bg-cp_background_paper rounded-3xl border border-cp_borders_main shadow-lg overflow-hidden">
+                        <div class="flex">
+                            <button id="tab-appt" onclick="switchTab('appt')"
+                                class="flex-1 py-4 px-5 text-sm font-medium bg-cp_palette_primary text-cp_text_tertiary border-r border-cp_borders_main transition-all duration-300 flex items-center justify-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                Book Appointment
+                            </button>
+                            <button id="tab-general" onclick="switchTab('general')"
+                                class="flex-1 py-4 px-5 text-sm font-medium bg-cp_background_default text-cp_text_secondary transition-all duration-300 flex items-center justify-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                General Enquiry
+                            </button>
+                        </div>
+
+                        <div id="form-appt" class="p-8">
+                            <h3 class="font-display text-2xl font-700 text-cp_palette_primary mb-2">Book an Appointment
+                            </h3>
+                            <p class="text-cp_text_secondary text-sm mb-7">Fill in your details and preferred
+                                department. Our scheduling team will confirm your appointment slot within 24 hours.</p>
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div><label
+                                        class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Full
+                                        Name</label><input type="text" placeholder="Your full name"
+                                        class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300 placeholder-cp_text_secondary" />
+                                </div>
+                                <div><label
+                                        class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Date
+                                        of Birth</label><input type="date"
+                                        class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300" />
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div><label
+                                        class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Phone
+                                        Number</label><input type="tel" placeholder="+1 (XXX) XXX-XXXX"
+                                        class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300 placeholder-cp_text_secondary" />
+                                </div>
+                                <div><label
+                                        class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Email</label><input
+                                        type="email" placeholder="your@email.com"
+                                        class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300 placeholder-cp_text_secondary" />
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div><label
+                                        class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Department</label><select
+                                        class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300 appearance-none">
+                                        <option value="">Select a department…</option>
+                                        <option>Emergency Medicine</option>
+                                        <option>Cardiology &amp; Heart Care</option>
+                                        <option>Paediatrics &amp; Child Health</option>
+                                        <option>Orthopaedics &amp; Trauma</option>
+                                        <option>Neurology</option>
+                                        <option>Oncology &amp; Cancer Care</option>
+                                        <option>General Surgery</option>
+                                        <option>Internal Medicine</option>
+                                        <option>I'm not sure — please advise</option>
+                                    </select></div>
+                                <div><label
+                                        class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Preferred
+                                        Date</label><input type="date"
+                                        class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300" />
+                                </div>
+                            </div>
+                            <div class="mb-4"><label
+                                    class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Are
+                                    you an existing patient?</label><select
+                                    class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300 appearance-none">
+                                    <option>Yes — I have a patient record at Cedar</option>
+                                    <option>No — this is my first visit</option>
+                                </select></div>
+                            <div class="mb-6"><label
+                                    class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Reason
+                                    for Visit</label><textarea rows="3"
+                                    placeholder="Briefly describe your symptoms or the reason for the appointment…"
+                                    class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300 placeholder-cp_text_secondary resize-none"></textarea>
+                            </div>
+                            <button onclick="submitForm('appt-success')"
+                                class="w-full bg-cp_palette_primary text-cp_text_tertiary font-medium py-4 rounded-full hover:bg-cp_palette_secondary hover:scale-[1.02] transition-all duration-300">Request
+                                Appointment →</button>
+                            <div id="appt-success"
+                                class="hidden mt-4 bg-cp_palette_accent/10 border border-cp_palette_accent text-cp_palette_primary text-sm px-5 py-4 rounded-xl">
+                                <span class="font-bold text-cp_palette_accent">✓ </span>Request received. Our scheduling
+                                team will confirm your appointment within 24 hours.
+                            </div>
+                        </div>
+
+                        <div id="form-general" class="hidden p-8">
+                            <h3 class="font-display text-2xl font-700 text-cp_palette_primary mb-2">Send an Enquiry</h3>
+                            <p class="text-cp_text_secondary text-sm mb-7">Questions about treatments, visiting,
+                                records, billing, or anything else — we're happy to help.</p>
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div><label
+                                        class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Full
+                                        Name</label><input type="text" placeholder="Your full name"
+                                        class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300 placeholder-cp_text_secondary" />
+                                </div>
+                                <div><label
+                                        class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Phone
+                                        or Email</label><input type="text" placeholder="How should we reach you?"
+                                        class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300 placeholder-cp_text_secondary" />
+                                </div>
+                            </div>
+                            <div class="mb-4"><label
+                                    class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Topic</label><select
+                                    class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300 appearance-none">
+                                    <option value="">Select a topic…</option>
+                                    <option>Appointment Scheduling</option>
+                                    <option>Visiting Hours &amp; Access</option>
+                                    <option>Billing &amp; Insurance</option>
+                                    <option>Medical Records Request</option>
+                                    <option>Feedback or Complaint</option>
+                                    <option>Referring a Patient</option>
+                                    <option>Careers at Cedar</option>
+                                    <option>General Question</option>
+                                </select></div>
+                            <div class="mb-6"><label
+                                    class="block text-xs font-600 text-cp_palette_primary uppercase tracking-widest mb-2">Your
+                                    Message</label><textarea rows="5" placeholder="How can we help you today?"
+                                    class="w-full border border-cp_borders_main bg-cp_background_default text-cp_palette_primary text-sm px-4 py-3 rounded-xl focus:outline-none focus:border-cp_palette_accent transition-colors duration-300 placeholder-cp_text_secondary resize-none"></textarea>
+                            </div>
+                            <button onclick="submitForm('general-success')"
+                                class="w-full bg-cp_palette_secondary text-cp_text_tertiary font-medium py-4 rounded-full hover:opacity-90 hover:scale-[1.02] transition-all duration-300">Send
+                                Enquiry →</button>
+                            <div id="general-success"
+                                class="hidden mt-4 bg-cp_palette_accent/10 border border-cp_palette_accent text-cp_palette_primary text-sm px-5 py-4 rounded-xl">
+                                <span class="font-bold text-cp_palette_accent">✓ </span>Enquiry received. We'll be in
+                                touch within one business day.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <svg aria-hidden="true" class="w-full block bg-cp_background_default" style="margin-bottom:-2px"
+            viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 C600,70 840,0 1440,50 L1440,70 L0,70 Z" fill="#FFFFFF" />
+        </svg>
+
+        <section class="py-16 bg-cp_background_paper">
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="reveal mb-8"><span
+                        class="inline-block text-xs font-medium text-cp_palette_accent bg-cp_palette_accent/10 rounded-full px-4 py-1.5 mb-4 tracking-wide">Find
+                        Us</span>
+                    <h2 class="font-display text-4xl font-700 text-cp_palette_primary">Our Location</h2>
+                </div>
+                <div class="w-full h-80 overflow-hidden rounded-3xl border border-cp_borders_main shadow-lg reveal">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Springfield+Illinois+USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        class="w-full h-full border-0" loading="lazy" title="Cedar Medical Center location"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-cp_background_paper">
+            <div class="max-w-3xl mx-auto px-8">
+                <div class="text-center mb-14 reveal">
+                    <span
+                        class="inline-block text-xs font-medium text-cp_palette_accent bg-cp_palette_accent/10 rounded-full px-4 py-1.5 mb-5 tracking-wide">Patient
+                        Questions</span>
+                    <h2 class="font-display text-4xl font-700 text-cp_palette_primary">Before You Visit</h2>
+                </div>
+                <div class="space-y-3 reveal">
+                    <div
+                        class="bg-cp_background_default rounded-2xl overflow-hidden border border-cp_borders_main hover:border-cp_palette_accent transition-colors duration-300">
+                        <button class="faq-q w-full flex items-center justify-between px-7 py-5 text-left"
+                            onclick="toggleFaq(this)">
+                            <span class="font-display text-lg font-700 text-cp_palette_primary">Do I need a referral to
+                                see a specialist at Cedar?</span>
+                            <svg class="faq-icon w-5 h-5 text-cp_palette_accent flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-a hidden px-7 pb-5">
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">For most specialist consultations,
+                                a referral from your GP is recommended but not always required. Emergency presentations
+                                and some outpatient clinics accept self-referrals. Contact our scheduling team and they
+                                will advise you on the right pathway for your situation.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-cp_background_default rounded-2xl overflow-hidden border border-cp_borders_main hover:border-cp_palette_accent transition-colors duration-300">
+                        <button class="faq-q w-full flex items-center justify-between px-7 py-5 text-left"
+                            onclick="toggleFaq(this)">
+                            <span class="font-display text-lg font-700 text-cp_palette_primary">What should I bring to
+                                my first appointment?</span>
+                            <svg class="faq-icon w-5 h-5 text-cp_palette_accent flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-a hidden px-7 pb-5">
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">Please bring a valid photo ID,
+                                your insurance card (if applicable), a list of any current medications, and any relevant
+                                previous medical records or test results. Arriving 15 minutes before your appointment
+                                time is appreciated.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-cp_background_default rounded-2xl overflow-hidden border border-cp_borders_main hover:border-cp_palette_accent transition-colors duration-300">
+                        <button class="faq-q w-full flex items-center justify-between px-7 py-5 text-left"
+                            onclick="toggleFaq(this)">
+                            <span class="font-display text-lg font-700 text-cp_palette_primary">Does Cedar Medical
+                                accept insurance?</span>
+                            <svg class="faq-icon w-5 h-5 text-cp_palette_accent flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-a hidden px-7 pb-5">
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">Yes. We accept most major
+                                insurance plans including Medicare and Medicaid. For a full list of accepted providers,
+                                or to verify your coverage before your visit, please contact our billing team on +1
+                                (217) 555-0191.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-cp_background_default rounded-2xl overflow-hidden border border-cp_borders_main hover:border-cp_palette_accent transition-colors duration-300">
+                        <button class="faq-q w-full flex items-center justify-between px-7 py-5 text-left"
+                            onclick="toggleFaq(this)">
+                            <span class="font-display text-lg font-700 text-cp_palette_primary">Can family members stay
+                                with a patient overnight?</span>
+                            <svg class="faq-icon w-5 h-5 text-cp_palette_accent flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-a hidden px-7 pb-5">
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">In most wards, one family member
+                                may stay overnight with an admitted patient. Dedicated family accommodation is available
+                                in our Paediatrics unit for parents of child patients. ICU and post-surgery wards have
+                                restricted access — the nursing team will advise on a case-by-case basis.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-cp_background_default rounded-2xl overflow-hidden border border-cp_borders_main hover:border-cp_palette_accent transition-colors duration-300">
+                        <button class="faq-q w-full flex items-center justify-between px-7 py-5 text-left"
+                            onclick="toggleFaq(this)">
+                            <span class="font-display text-lg font-700 text-cp_palette_primary">How do I access my
+                                medical records?</span>
+                            <svg class="faq-icon w-5 h-5 text-cp_palette_accent flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-a hidden px-7 pb-5">
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">Medical records requests can be
+                                submitted in writing to our Patient Relations team. Records are typically processed
+                                within 5–7 business days. You can also authorise another healthcare provider to request
+                                records directly on your behalf.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-cp_palette_primary py-16">
+        <div class="max-w-6xl mx-auto px-8">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-2.5 mb-5">
+                        <div class="w-8 h-8 bg-cp_palette_accent rounded-full flex items-center justify-center"><svg
+                                class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg></div><span class="font-display text-xl font-700 text-white">Cedar<span
+                                class="text-cp_palette_accent italic"> Medical</span></span>
+                    </div>
+                    <p class="text-sm text-white/50 leading-relaxed max-w-xs mb-5">Your health is our calling.
+                        JCI-accredited, community-centred care since 2004.</p>
+                    <p class="text-xs text-cp_palette_accent font-medium mb-1">Emergency Line (24/7)</p>
+                    <p class="font-display text-2xl font-700 text-white">+1 (800) 233-2911</p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-600 uppercase tracking-[0.2em] text-cp_palette_accent mb-5">Departments</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Emergency
+                                Medicine</a></li>
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Cardiology</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Paediatrics</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">All
+                                Departments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-600 uppercase tracking-[0.2em] text-cp_palette_accent mb-5">Visiting Hours
+                    </h4>
+                    <p class="text-xs text-white/40 mb-1">General Wards</p>
+                    <p class="text-sm text-white/70 mb-4">Daily · 10:00 AM – 8:00 PM</p>
+                    <p class="text-xs text-white/40 mb-1">ICU / Critical Care</p>
+                    <p class="text-sm text-white/70 mb-6">Family only · By appointment</p><a href="#"
+                        onclick="switchTab('appt'); window.scrollTo({top:0,behavior:'smooth'}); return false;"
+                        class="inline-block bg-cp_palette_secondary text-white text-sm font-medium px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity duration-300">Book
+                        Appointment</a>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-white/30">© 2026 Cedar Medical Center. All rights reserved.</p>
+                <div class="flex gap-6 text-xs text-white/30"><a href="#"
+                        class="hover:text-white/60 transition-colors duration-300">Privacy Policy</a><a href="#"
+                        class="hover:text-white/60 transition-colors duration-300">Patient Rights</a><a href="#"
+                        class="hover:text-white/60 transition-colors duration-300">Accreditations</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () { const s = document.createElement('style'); s.textContent = `body{background-color:var(--background-default);color:var(--text-secondary);font-family:"DM Sans",system-ui,sans-serif;overflow-x:hidden;}.page-hero{min-height:100vh;}.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.8s ease,transform 0.8s ease;}.reveal.visible{opacity:1;transform:translateY(0);}`; document.head.appendChild(s); })();
+        const navbar = document.getElementById('navbar'), navWordmark = document.getElementById('nav-wordmark'), navLinks = document.querySelectorAll('.nav-link'), bar1 = document.getElementById('bar1'), bar2 = document.getElementById('bar2'), bar3 = document.getElementById('bar3');
+        window.addEventListener('scroll', () => { const s = window.scrollY > 60; navbar.classList.toggle('bg-cp_background_paper', s); navbar.classList.toggle('shadow-md', s); if (navWordmark) { navWordmark.classList.toggle('text-cp_text_tertiary', !s); navWordmark.classList.toggle('text-cp_palette_primary', s); } navLinks.forEach(el => { if (!el.classList.contains('text-cp_palette_accent')) { el.classList.toggle('text-cp_text_tertiary', !s); el.classList.toggle('text-cp_palette_primary', s); } });[bar1, bar2, bar3].forEach(b => { b.classList.toggle('bg-cp_text_tertiary', !s); b.classList.toggle('bg-cp_palette_primary', s); }); });
+        const menuBtn = document.getElementById('menu-btn'), mobileMenu = document.getElementById('mobile-menu'); let open = false;
+        menuBtn.addEventListener('click', () => { open = !open; mobileMenu.classList.toggle('hidden'); mobileMenu.classList.toggle('flex'); bar1.classList.toggle('translate-y-2'); bar1.classList.toggle('rotate-45'); bar2.classList.toggle('opacity-0'); bar3.classList.toggle('-translate-y-2'); bar3.classList.toggle('-rotate-45'); });
+        mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { open = false; mobileMenu.classList.add('hidden'); mobileMenu.classList.remove('flex'); bar1.classList.remove('translate-y-2', 'rotate-45'); bar2.classList.remove('opacity-0'); bar3.classList.remove('-translate-y-2', '-rotate-45'); }));
+        function switchTab(tab) { const isAppt = tab === 'appt'; const ta = document.getElementById('tab-appt'), tg = document.getElementById('tab-general'); ta.classList.toggle('bg-cp_palette_primary', isAppt); ta.classList.toggle('text-cp_text_tertiary', isAppt); ta.classList.toggle('bg-cp_background_default', !isAppt); ta.classList.toggle('text-cp_text_secondary', !isAppt); tg.classList.toggle('bg-cp_palette_primary', !isAppt); tg.classList.toggle('text-cp_text_tertiary', !isAppt); tg.classList.toggle('bg-cp_background_default', isAppt); tg.classList.toggle('text-cp_text_secondary', isAppt); document.getElementById('form-appt').classList.toggle('hidden', !isAppt); document.getElementById('form-general').classList.toggle('hidden', isAppt); }
+        function submitForm(id) { const m = document.getElementById(id); m.classList.remove('hidden'); setTimeout(() => m.classList.add('hidden'), 7000); }
+        function toggleFaq(btn) { const a = btn.nextElementSibling, icon = btn.querySelector('.faq-icon'), isOpen = !a.classList.contains('hidden'); document.querySelectorAll('.faq-a').forEach(x => x.classList.add('hidden')); document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)'); if (!isOpen) { a.classList.remove('hidden'); icon.style.transform = 'rotate(180deg)'; } }
+        const obs = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('visible'); obs.unobserve(x.target); } }), { threshold: 0.08 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    </script>
+</body>
+
+</html>

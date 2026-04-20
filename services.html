@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Departments – Cedar Medical Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <style id="dynamic-color-styles">
+        @layer base {
+            :root {
+                --palette-primary: #1A3C34;
+                --palette-secondary: #F4845F;
+                --palette-accent: #52B788;
+                --palette-steel: #6B7C74;
+                --background-default: #FAF7F2;
+                --background-paper: #FFFFFF;
+                --text-secondary: #6B7C74;
+                --text-tertiary: #FFFFFF;
+                --borders-main: #DDE8E2;
+            }
+
+            :dir(ltr) {
+                font-family: "DM Sans", system-ui, sans-serif;
+            }
+        }
+
+        .bg-cp_palette_primary {
+            background-color: var(--palette-primary) !important;
+        }
+
+        .bg-cp_palette_secondary {
+            background-color: var(--palette-secondary) !important;
+        }
+
+        .bg-cp_palette_accent {
+            background-color: var(--palette-accent) !important;
+        }
+
+        .bg-cp_palette_steel {
+            background-color: var(--palette-steel) !important;
+        }
+
+        .bg-cp_background_default {
+            background-color: var(--background-default) !important;
+        }
+
+        .bg-cp_background_paper {
+            background-color: var(--background-paper) !important;
+        }
+
+        .text-cp_palette_primary {
+            color: var(--palette-primary) !important;
+        }
+
+        .text-cp_palette_secondary {
+            color: var(--palette-secondary) !important;
+        }
+
+        .text-cp_palette_accent {
+            color: var(--palette-accent) !important;
+        }
+
+        .text-cp_palette_steel {
+            color: var(--palette-steel) !important;
+        }
+
+        .text-cp_text_secondary {
+            color: var(--text-secondary) !important;
+        }
+
+        .text-cp_text_tertiary {
+            color: var(--text-tertiary) !important;
+        }
+
+        .border-cp_borders_main {
+            border-color: var(--borders-main) !important;
+        }
+
+        .border-cp_palette_primary {
+            border-color: var(--palette-primary) !important;
+        }
+
+        .border-cp_palette_secondary {
+            border-color: var(--palette-secondary) !important;
+        }
+
+        .border-cp_palette_accent {
+            border-color: var(--palette-accent) !important;
+        }
+
+        .hover\:bg-cp_palette_primary:hover {
+            background-color: var(--palette-primary) !important;
+        }
+
+        .hover\:bg-cp_palette_secondary:hover {
+            background-color: var(--palette-secondary) !important;
+        }
+
+        .hover\:bg-cp_palette_accent:hover {
+            background-color: var(--palette-accent) !important;
+        }
+
+        .hover\:bg-cp_background_default:hover {
+            background-color: var(--background-default) !important;
+        }
+
+        .hover\:bg-cp_background_paper:hover {
+            background-color: var(--background-paper) !important;
+        }
+
+        .hover\:text-cp_palette_primary:hover {
+            color: var(--palette-primary) !important;
+        }
+
+        .hover\:text-cp_palette_secondary:hover {
+            color: var(--palette-secondary) !important;
+        }
+
+        .hover\:text-cp_palette_accent:hover {
+            color: var(--palette-accent) !important;
+        }
+
+        .hover\:text-cp_text_tertiary:hover {
+            color: var(--text-tertiary) !important;
+        }
+
+        .hover\:border-cp_palette_primary:hover {
+            border-color: var(--palette-primary) !important;
+        }
+
+        .hover\:border-cp_palette_secondary:hover {
+            border-color: var(--palette-secondary) !important;
+        }
+
+        .hover\:border-cp_palette_accent:hover {
+            border-color: var(--palette-accent) !important;
+        }
+
+        .focus\:border-cp_palette_accent:focus {
+            border-color: var(--palette-accent) !important;
+        }
+
+        .font-display {
+            font-family: 'Fraunces', Georgia, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-8 py-5 grid grid-cols-3 items-center">
+            <nav class="hidden md:flex items-center gap-8 text-sm">
+                <a href="index.html"
+                    class="nav-link text-cp_text_tertiary opacity-80 hover:opacity-100 hover:text-cp_palette_accent transition-all duration-300">Home</a>
+                <a href="services.html"
+                    class="nav-link text-cp_palette_accent font-medium transition-all duration-300">Departments</a>
+            </nav>
+            <div class="flex justify-center">
+                <a href="index.html" class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 bg-cp_palette_accent rounded-full flex items-center justify-center"><svg
+                            class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg></div>
+                    <span id="nav-wordmark"
+                        class="font-display text-xl font-700 text-cp_text_tertiary tracking-tight">Cedar<span
+                            class="text-cp_palette_accent italic"> Medical</span></span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center justify-end gap-8 text-sm">
+                <a href="about.html"
+                    class="nav-link text-cp_text_tertiary opacity-80 hover:opacity-100 hover:text-cp_palette_accent transition-all duration-300">About</a>
+                <a href="contact.html"
+                    class="nav-cta text-sm font-medium bg-cp_palette_secondary text-cp_text_tertiary px-5 py-2.5 rounded-full hover:opacity-90 hover:scale-105 transition-all duration-300">Book
+                    Appointment</a>
+            </div>
+            <div class="md:hidden flex justify-end col-span-2">
+                <button id="menu-btn" class="flex flex-col gap-1.5 focus:outline-none">
+                    <span id="bar1" class="block w-6 h-0.5 bg-cp_text_tertiary transition-all duration-300"></span>
+                    <span id="bar2" class="block w-6 h-0.5 bg-cp_text_tertiary transition-all duration-300"></span>
+                    <span id="bar3" class="block w-6 h-0.5 bg-cp_text_tertiary transition-all duration-300"></span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu"
+            class="md:hidden hidden flex-col items-center gap-6 py-10 text-sm bg-cp_palette_primary text-cp_text_tertiary">
+            <a href="index.html" class="hover:text-cp_palette_accent transition-colors duration-300">Home</a>
+            <a href="services.html" class="text-cp_palette_accent font-medium">Departments</a>
+            <a href="about.html" class="hover:text-cp_palette_accent transition-colors duration-300">About</a>
+            <a href="contact.html" class="bg-cp_palette_secondary px-6 py-2.5 rounded-full hover:opacity-90">Book
+                Appointment</a>
+        </div>
+    </header>
+
+    <section class="page-hero relative overflow-hidden bg-cp_palette_primary">
+        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?q=80&w=1600&auto=format&fit=crop"
+            alt="Cedar Medical Center departments" class="absolute inset-0 w-full h-full object-cover opacity-20" />
+        <div aria-hidden="true"
+            class="absolute inset-0 bg-gradient-to-r from-[#1A3C34]/95 via-[#1A3C34]/80 to-transparent pointer-events-none">
+        </div>
+        <div class="relative z-10 max-w-6xl mx-auto px-8 pt-44 pb-32">
+            <div class="max-w-2xl">
+                <span class="inline-flex items-center gap-2 bg-white/10 rounded-full px-5 py-2 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-cp_palette_accent"></span>
+                    <span class="text-xs font-medium text-cp_palette_accent tracking-wide">Clinical Departments</span>
+                </span>
+                <h1 class="font-display text-6xl md:text-7xl font-900 text-cp_text_tertiary leading-[1.0] mb-7">
+                    Expert care in <em class="italic font-300 text-cp_palette_accent">every</em> specialty.
+                </h1>
+                <p class="text-cp_text_tertiary opacity-65 text-lg leading-relaxed mb-8 max-w-xl">Eight fully staffed
+                    clinical departments under one roof — so you receive coordinated, seamless care without the need to
+                    travel across the city.</p>
+                <nav class="flex items-center gap-3 text-xs text-cp_text_tertiary opacity-50 uppercase tracking-widest">
+                    <a href="index.html"
+                        class="hover:text-cp_palette_accent hover:opacity-100 transition-all duration-300">Home</a><span>/</span><span
+                        class="text-cp_palette_accent opacity-100">Departments</span>
+                </nav>
+            </div>
+        </div>
+        <svg aria-hidden="true" class="relative w-full block" style="margin-bottom:-2px" viewBox="0 0 1440 70"
+            preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 1080,0 1440,40 L1440,70 L0,70 Z" fill="#FAF7F2" />
+        </svg>
+    </section>
+
+    <main>
+
+        <section class="py-24 bg-cp_background_default">
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-end mb-20 reveal">
+                    <div>
+                        <span
+                            class="inline-block text-xs font-medium text-cp_palette_accent bg-cp_palette_accent/10 rounded-full px-4 py-1.5 mb-5 tracking-wide">Our
+                            Departments</span>
+                        <h2 class="font-display text-5xl md:text-6xl font-700 text-cp_palette_primary leading-tight">
+                            Everything you need, all in one place.</h2>
+                    </div>
+                    <p class="text-cp_text_secondary leading-relaxed text-lg">We believe fragmented care leads to worse
+                        outcomes. Every department at Cedar is designed to collaborate — your cardiologist speaks
+                        directly with your GP, your surgeon coordinates with your anaesthetist, and your care team
+                        shares a single record.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+
+                    <div
+                        class="bg-cp_background_paper rounded-2xl p-8 border border-cp_borders_main hover:border-cp_palette_accent hover:shadow-xl hover:-translate-y-2 transition-all duration-300 reveal">
+                        <div
+                            class="w-14 h-14 bg-cp_palette_secondary/10 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-cp_palette_secondary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-2xl font-700 text-cp_palette_primary mb-3">Emergency Medicine</h3>
+                        <p class="text-cp_text_secondary text-sm leading-relaxed mb-6">24-hour emergency care for
+                            trauma, cardiac events, respiratory distress, and all life-threatening conditions. Average
+                            physician contact time: under 4 minutes.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs bg-cp_palette_secondary/10 text-cp_palette_secondary rounded-full px-3 py-1">24/7
+                                Open</span>
+                            <span
+                                class="text-xs bg-cp_palette_secondary/10 text-cp_palette_secondary rounded-full px-3 py-1">Trauma
+                                Care</span>
+                            <span
+                                class="text-xs bg-cp_palette_secondary/10 text-cp_palette_secondary rounded-full px-3 py-1">Resuscitation
+                                Unit</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-cp_background_paper rounded-2xl p-8 border border-cp_borders_main hover:border-cp_palette_accent hover:shadow-xl hover:-translate-y-2 transition-all duration-300 reveal">
+                        <div
+                            class="w-14 h-14 bg-cp_palette_primary/10 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-cp_palette_primary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-2xl font-700 text-cp_palette_primary mb-3">Cardiology</h3>
+                        <p class="text-cp_text_secondary text-sm leading-relaxed mb-6">Comprehensive cardiac diagnostics
+                            and treatment — from echocardiography and Holter monitoring to interventional procedures and
+                            post-cardiac rehabilitation programmes.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs bg-cp_palette_primary/8 text-cp_palette_primary rounded-full px-3 py-1">Echocardiography</span>
+                            <span
+                                class="text-xs bg-cp_palette_primary/8 text-cp_palette_primary rounded-full px-3 py-1">Intervention</span>
+                            <span
+                                class="text-xs bg-cp_palette_primary/8 text-cp_palette_primary rounded-full px-3 py-1">Cardiac
+                                Rehab</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-cp_background_paper rounded-2xl p-8 border border-cp_borders_main hover:border-cp_palette_accent hover:shadow-xl hover:-translate-y-2 transition-all duration-300 reveal">
+                        <div
+                            class="w-14 h-14 bg-cp_palette_accent/10 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-cp_palette_accent" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-2xl font-700 text-cp_palette_primary mb-3">Paediatrics</h3>
+                        <p class="text-cp_text_secondary text-sm leading-relaxed mb-6">Child-centred care from birth
+                            through adolescence. Our paediatric ward features dedicated play areas, family
+                            accommodation, and specialists trained exclusively in childhood medicine.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs bg-cp_palette_accent/10 text-cp_palette_accent rounded-full px-3 py-1">Neonatal
+                                Care</span>
+                            <span
+                                class="text-xs bg-cp_palette_accent/10 text-cp_palette_accent rounded-full px-3 py-1">Child
+                                Development</span>
+                            <span
+                                class="text-xs bg-cp_palette_accent/10 text-cp_palette_accent rounded-full px-3 py-1">Immunisation</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-cp_background_paper rounded-2xl p-8 border border-cp_borders_main hover:border-cp_palette_accent hover:shadow-xl hover:-translate-y-2 transition-all duration-300 reveal">
+                        <div
+                            class="w-14 h-14 bg-cp_palette_primary/10 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-cp_palette_primary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-2xl font-700 text-cp_palette_primary mb-3">Orthopaedics &amp;
+                            Trauma</h3>
+                        <p class="text-cp_text_secondary text-sm leading-relaxed mb-6">From sports injuries and
+                            fractures to joint replacement surgeries and spinal care — our orthopaedic team restores
+                            movement and quality of life with precision and care.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs bg-cp_palette_primary/8 text-cp_palette_primary rounded-full px-3 py-1">Joint
+                                Replacement</span>
+                            <span
+                                class="text-xs bg-cp_palette_primary/8 text-cp_palette_primary rounded-full px-3 py-1">Sports
+                                Injuries</span>
+                            <span
+                                class="text-xs bg-cp_palette_primary/8 text-cp_palette_primary rounded-full px-3 py-1">Spinal
+                                Care</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-cp_background_paper rounded-2xl p-8 border border-cp_borders_main hover:border-cp_palette_accent hover:shadow-xl hover:-translate-y-2 transition-all duration-300 reveal">
+                        <div
+                            class="w-14 h-14 bg-cp_palette_secondary/10 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-cp_palette_secondary" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-2xl font-700 text-cp_palette_primary mb-3">Neurology</h3>
+                        <p class="text-cp_text_secondary text-sm leading-relaxed mb-6">Diagnostic and treatment services
+                            for neurological conditions including stroke, epilepsy, Parkinson's disease, migraine, and
+                            multiple sclerosis — delivered by fellowship-trained neurologists.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs bg-cp_palette_secondary/10 text-cp_palette_secondary rounded-full px-3 py-1">Stroke
+                                Unit</span>
+                            <span
+                                class="text-xs bg-cp_palette_secondary/10 text-cp_palette_secondary rounded-full px-3 py-1">Epilepsy
+                                Care</span>
+                            <span
+                                class="text-xs bg-cp_palette_secondary/10 text-cp_palette_secondary rounded-full px-3 py-1">EEG
+                                & MRI</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-cp_background_paper rounded-2xl p-8 border border-cp_borders_main hover:border-cp_palette_accent hover:shadow-xl hover:-translate-y-2 transition-all duration-300 reveal">
+                        <div
+                            class="w-14 h-14 bg-cp_palette_accent/10 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-cp_palette_accent" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-2xl font-700 text-cp_palette_primary mb-3">Oncology &amp; Cancer
+                            Care</h3>
+                        <p class="text-cp_text_secondary text-sm leading-relaxed mb-6">A full-spectrum oncology
+                            programme including medical oncology, chemotherapy, palliative care, and survivorship
+                            planning — with a multidisciplinary tumour board reviewing every complex case.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs bg-cp_palette_accent/10 text-cp_palette_accent rounded-full px-3 py-1">Chemotherapy</span>
+                            <span
+                                class="text-xs bg-cp_palette_accent/10 text-cp_palette_accent rounded-full px-3 py-1">Palliative
+                                Care</span>
+                            <span
+                                class="text-xs bg-cp_palette_accent/10 text-cp_palette_accent rounded-full px-3 py-1">Survivorship</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <svg aria-hidden="true" class="w-full block bg-cp_background_default" style="margin-bottom:-2px"
+            viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 C600,70 840,0 1440,50 L1440,70 L0,70 Z" fill="#FFFFFF" />
+        </svg>
+
+        <section class="py-24 bg-cp_background_paper">
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="text-center mb-16 reveal">
+                    <span
+                        class="inline-block text-xs font-medium text-cp_palette_accent bg-cp_palette_accent/10 rounded-full px-4 py-1.5 mb-5 tracking-wide">How
+                        Your Care Works</span>
+                    <h2 class="font-display text-5xl font-700 text-cp_palette_primary mb-5">Your Patient Journey</h2>
+                    <p class="text-cp_text_secondary max-w-xl mx-auto leading-relaxed">From your first call to your
+                        follow-up appointment — here is exactly what to expect when you come to Cedar Medical Center.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div aria-hidden="true"
+                        class="hidden md:block absolute top-10 left-[12.5%] right-[12.5%] h-0.5 bg-cp_borders_main z-0">
+                    </div>
+                    <div class="grid md:grid-cols-4 gap-8 relative z-10">
+                        <div class="text-center reveal">
+                            <div
+                                class="w-20 h-20 bg-cp_palette_primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                                <span class="font-display text-2xl font-700 text-white">01</span>
+                            </div>
+                            <h3 class="font-display text-xl font-700 text-cp_palette_primary mb-3">Book</h3>
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">Call us or book online in under
+                                two minutes. Our scheduling team matches you to the right specialist for your needs.</p>
+                        </div>
+                        <div class="text-center reveal">
+                            <div
+                                class="w-20 h-20 bg-cp_palette_secondary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                                <span class="font-display text-2xl font-700 text-white">02</span>
+                            </div>
+                            <h3 class="font-display text-xl font-700 text-cp_palette_primary mb-3">Consult</h3>
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">Meet your specialist in a calm,
+                                unhurried appointment. We allocate enough time to truly understand your situation.</p>
+                        </div>
+                        <div class="text-center reveal">
+                            <div
+                                class="w-20 h-20 bg-cp_palette_accent rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                                <span class="font-display text-2xl font-700 text-white">03</span>
+                            </div>
+                            <h3 class="font-display text-xl font-700 text-cp_palette_primary mb-3">Treat</h3>
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">Your treatment plan — whether
+                                medication, procedure, or surgery — is carried out by experienced specialists using
+                                modern facilities.</p>
+                        </div>
+                        <div class="text-center reveal">
+                            <div
+                                class="w-20 h-20 bg-cp_palette_primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                                <span class="font-display text-2xl font-700 text-white">04</span>
+                            </div>
+                            <h3 class="font-display text-xl font-700 text-cp_palette_primary mb-3">Recover</h3>
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">Structured follow-up care,
+                                physiotherapy, and long-term monitoring ensure your recovery is complete — not just
+                                started.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <svg aria-hidden="true" class="w-full block bg-cp_background_paper" style="margin-bottom:-2px"
+            viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C480,0 960,70 1440,20 L1440,70 L0,70 Z" fill="#FAF7F2" />
+        </svg>
+
+        <section class="py-24 bg-cp_background_default">
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="text-center mb-16 reveal">
+                    <span
+                        class="inline-block text-xs font-medium text-cp_palette_accent bg-cp_palette_accent/10 rounded-full px-4 py-1.5 mb-5 tracking-wide">Clinical
+                        Results</span>
+                    <h2 class="font-display text-5xl font-700 text-cp_palette_primary mb-5">Outcomes That Speak for
+                        Themselves</h2>
+                    <p class="text-cp_text_secondary max-w-xl mx-auto leading-relaxed">Real data from real patients
+                        across three of our most active departments.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-cp_background_paper rounded-2xl overflow-hidden border border-cp_borders_main hover:shadow-xl transition-all duration-300 reveal">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=600&auto=format&fit=crop"
+                                alt="Emergency department" class="w-full h-full object-cover" />
+                            <div
+                                class="absolute top-4 left-4 bg-cp_palette_secondary text-white text-xs font-medium rounded-full px-3 py-1 pointer-events-none">
+                                Emergency Medicine</div>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="font-display text-xl font-700 text-cp_palette_primary mb-2">4-Minute Response
+                                Time</h3>
+                            <p class="text-xs text-cp_palette_accent font-medium mb-4 uppercase tracking-widest">Avg.
+                                physician contact on arrival</p>
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">Our emergency department
+                                consistently achieves a physician contact time of under 4 minutes from patient
+                                registration — ranking in the top 5% nationally for ER responsiveness.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-cp_background_paper rounded-2xl overflow-hidden border border-cp_borders_main hover:shadow-xl transition-all duration-300 reveal">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=600&auto=format&fit=crop"
+                                alt="Cardiac care" class="w-full h-full object-cover" />
+                            <div
+                                class="absolute top-4 left-4 bg-cp_palette_primary text-white text-xs font-medium rounded-full px-3 py-1 pointer-events-none">
+                                Cardiology</div>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="font-display text-xl font-700 text-cp_palette_primary mb-2">94% Post-Cardiac
+                                Recovery Rate</h3>
+                            <p class="text-xs text-cp_palette_accent font-medium mb-4 uppercase tracking-widest">At 12
+                                months post-treatment</p>
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">Patients completing our cardiac
+                                rehabilitation programme show a 94% sustained recovery rate at the 12-month mark —
+                                significantly above the national benchmark of 79%.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-cp_background_paper rounded-2xl overflow-hidden border border-cp_borders_main hover:shadow-xl transition-all duration-300 reveal">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?q=80&w=600&auto=format&fit=crop"
+                                alt="Paediatrics ward" class="w-full h-full object-cover" />
+                            <div
+                                class="absolute top-4 left-4 bg-cp_palette_accent text-white text-xs font-medium rounded-full px-3 py-1 pointer-events-none">
+                                Paediatrics</div>
+                        </div>
+                        <div class="p-7">
+                            <h3 class="font-display text-xl font-700 text-cp_palette_primary mb-2">98% Family
+                                Satisfaction Score</h3>
+                            <p class="text-xs text-cp_palette_accent font-medium mb-4 uppercase tracking-widest">2024
+                                Annual Patient Survey</p>
+                            <p class="text-cp_text_secondary text-sm leading-relaxed">Families of patients treated in
+                                our paediatric unit reported 98% overall satisfaction — citing communication, emotional
+                                support, and clinical quality as key strengths.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <svg aria-hidden="true" class="w-full block bg-cp_background_default" style="margin-bottom:-2px"
+            viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,35 C360,0 1080,70 1440,35 L1440,70 L0,70 Z" fill="#FFFFFF" />
+        </svg>
+
+        <section class="py-28 bg-cp_background_paper text-center">
+            <div class="max-w-2xl mx-auto px-8 reveal">
+                <span
+                    class="inline-block text-xs font-medium text-cp_palette_accent bg-cp_palette_accent/10 rounded-full px-4 py-1.5 mb-7 tracking-wide">Ready
+                    to Be Seen</span>
+                <h2 class="font-display text-5xl md:text-6xl font-700 text-cp_palette_primary leading-tight mb-7">
+                    Book with the right <em class="italic font-400 text-cp_palette_secondary">specialist</em> today.
+                </h2>
+                <p class="text-cp_text_secondary leading-relaxed mb-10">Our scheduling team will match you to the right
+                    department and specialist — typically within 48 hours. For emergencies, we're open 24 hours a day.
+                </p>
+                <a href="contact.html"
+                    class="group inline-flex items-center gap-3 bg-cp_palette_primary text-cp_text_tertiary font-medium px-10 py-4 rounded-full hover:bg-cp_palette_secondary hover:scale-105 transition-all duration-300">
+                    Book an Appointment
+                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-cp_palette_primary py-16">
+        <div class="max-w-6xl mx-auto px-8">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-2.5 mb-5">
+                        <div class="w-8 h-8 bg-cp_palette_accent rounded-full flex items-center justify-center"><svg
+                                class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg></div><span class="font-display text-xl font-700 text-white">Cedar<span
+                                class="text-cp_palette_accent italic"> Medical</span></span>
+                    </div>
+                    <p class="text-sm text-white/50 leading-relaxed max-w-xs mb-5">Your health is our calling.
+                        JCI-accredited, community-centred medical care since 2004.</p>
+                    <p class="text-xs text-cp_palette_accent font-medium mb-1">Emergency Line (24/7)</p>
+                    <p class="font-display text-2xl font-700 text-white">+1 (800) 233-2911</p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-600 uppercase tracking-[0.2em] text-cp_palette_accent mb-5">Departments</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Emergency
+                                Medicine</a></li>
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Cardiology</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Paediatrics</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Orthopaedics</a>
+                        </li>
+                        <li><a href="services.html"
+                                class="text-white/50 hover:text-cp_palette_accent transition-colors duration-300">Neurology</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-600 uppercase tracking-[0.2em] text-cp_palette_accent mb-5">Visiting Hours
+                    </h4>
+                    <p class="text-xs text-white/40 mb-1">General Wards</p>
+                    <p class="text-sm text-white/70 mb-4">Daily · 10:00 AM – 8:00 PM</p>
+                    <p class="text-xs text-white/40 mb-1">ICU / Critical Care</p>
+                    <p class="text-sm text-white/70 mb-6">Family only · By appointment</p><a href="contact.html"
+                        class="inline-block bg-cp_palette_secondary text-white text-sm font-medium px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity duration-300">Book
+                        Appointment</a>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-white/30">© 2026 Cedar Medical Center. All rights reserved.</p>
+                <div class="flex gap-6 text-xs text-white/30"><a href="#"
+                        class="hover:text-white/60 transition-colors duration-300">Privacy Policy</a><a href="#"
+                        class="hover:text-white/60 transition-colors duration-300">Patient Rights</a><a href="#"
+                        class="hover:text-white/60 transition-colors duration-300">Accreditations</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () { const s = document.createElement('style'); s.textContent = `body{background-color:var(--background-default);color:var(--text-secondary);font-family:"DM Sans",system-ui,sans-serif;overflow-x:hidden;}.page-hero{min-height:100vh;}.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.8s ease,transform 0.8s ease;}.reveal.visible{opacity:1;transform:translateY(0);}`; document.head.appendChild(s); })();
+        const navbar = document.getElementById('navbar'), navWordmark = document.getElementById('nav-wordmark'), navLinks = document.querySelectorAll('.nav-link'), bar1 = document.getElementById('bar1'), bar2 = document.getElementById('bar2'), bar3 = document.getElementById('bar3');
+        window.addEventListener('scroll', () => { const s = window.scrollY > 60; navbar.classList.toggle('bg-cp_background_paper', s); navbar.classList.toggle('shadow-md', s); if (navWordmark) { navWordmark.classList.toggle('text-cp_text_tertiary', !s); navWordmark.classList.toggle('text-cp_palette_primary', s); } navLinks.forEach(el => { if (!el.classList.contains('text-cp_palette_accent')) { el.classList.toggle('text-cp_text_tertiary', !s); el.classList.toggle('text-cp_palette_primary', s); } });[bar1, bar2, bar3].forEach(b => { b.classList.toggle('bg-cp_text_tertiary', !s); b.classList.toggle('bg-cp_palette_primary', s); }); });
+        const menuBtn = document.getElementById('menu-btn'), mobileMenu = document.getElementById('mobile-menu'); let open = false;
+        menuBtn.addEventListener('click', () => { open = !open; mobileMenu.classList.toggle('hidden'); mobileMenu.classList.toggle('flex'); bar1.classList.toggle('translate-y-2'); bar1.classList.toggle('rotate-45'); bar2.classList.toggle('opacity-0'); bar3.classList.toggle('-translate-y-2'); bar3.classList.toggle('-rotate-45'); });
+        mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { open = false; mobileMenu.classList.add('hidden'); mobileMenu.classList.remove('flex'); bar1.classList.remove('translate-y-2', 'rotate-45'); bar2.classList.remove('opacity-0'); bar3.classList.remove('-translate-y-2', '-rotate-45'); }));
+        const obs = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('visible'); obs.unobserve(x.target); } }), { threshold: 0.08 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    </script>
+</body>
+
+</html>
